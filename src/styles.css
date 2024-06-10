@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+#root {
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+body {
+  font-family: "Karla", sans-serif;
+  background-color: hsl(148, 38%, 91%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+label {
+  color: hsl(169, 82%, 27%);
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.col {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+}
+form.col {
+  gap: 20px;
+}
+.radio-container {
+  display: flex;
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 5px;
+  gap: 10px;
+}
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 5px;
+}
+textarea {
+  height: 100px;
+}
+button {
+  padding: 15px 0;
+  background-color: hsl(169, 82%, 27%);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer;
+}
+.error {
+  color: hsl(0, 66%, 54%);
+  font-style: italic;
+  font-size: 14px;
+}
+.success-message {
+  background-color: hsl(187, 24%, 22%);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  width: 80%;
+  max-width: 450px;
+  transform: translateX(-50%);
+  transition: 0.8s ease-in-out;
+}
+.success-message.active {
+  top: 10%;
+}
+@media (max-width: 510px) {
+  .success-message.active {
+    top: 0;
+  }
+}
