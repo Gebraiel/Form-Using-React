@@ -48,7 +48,7 @@ export default function Form() {
       <div
         className={`${
           showSuccessMessage ? "active" : ""
-        } active success-message`}
+        } success-message`}
       >
         <h2>✅ Message Sent</h2>
         <p>Thanks for completing the form. We'll be in touch soon!</p>

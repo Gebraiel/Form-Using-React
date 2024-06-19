@@ -79,6 +79,7 @@ input[type="radio"] {
   font-size: 14px;
 }
 .success-message {
+  /* display: none; */
   background-color: hsl(187, 24%, 22%);
   color: white;
   padding: 20px;
@@ -92,6 +93,7 @@ input[type="radio"] {
   transition: 0.8s ease-in-out;
 }
 .success-message.active {
+  /* display: block; */
   top: 10%;
 }
 @media (max-width: 510px) {
